@@ -4,16 +4,48 @@ let greeting = "Hello, World!";
 console.log(typeof greeting); //  "string"
 
 // Number
-let num = 42;
-console.log(typeof num); //"number"
+let num1 = 42;
+console.log(typeof num1); //"number"
+
+let num2 = 2e5; //200000
+console.log(num2);
 
 // Boolean
 let isMarried = true;
 console.log(typeof isMarried); // boolean
 
 // Null
+// Example: 1
 let a = null;
 console.log(a); // null
+
+// Example: 2 (Reset Variables)
+let selectedOption = null; // Option no longer selected
+
+// Example: 3 (Clearing Object Properties)
+let myObject = {
+  name: "John",
+  age: 30,
+};
+myObject = null; // reset the myObject variable
+console.log(myObject); // Output: null
+
+// Example: 4 (Default Function Arguments)
+function greet(name = null) {
+  if (name) {
+    console.log(`Hello, ${name}`);
+  } else {
+    console.log("No name has given");
+  }
+}
+greet(); // No name has given
+greet("Arif"); // Hello, Arif
+
+// Example: 5   (Indicating Error States )
+/* if (result === null) {
+  console.error("Operation failed.");
+}
+*/
 
 // Undefined
 let fullName;
@@ -88,5 +120,3 @@ let peopleList = ["Arnold", "Linda", "Sylvester", "Dolph"];
 peopleList[0] = "Jean-Claude";
 
 console.log(peopleList); // [ 'Jean-Claude', 'Linda', 'Sylvester', 'Dolph' ]
-
-
