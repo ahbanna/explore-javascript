@@ -47,3 +47,7 @@ let wrongAverage = age1 + age2 / 2; // 20
 let rightAverage = (age1 + age2) / 2; // 15
 
 console.log(wrongAverage, rightAverage);
+
+console.log("I ❤  You");
+
+//
