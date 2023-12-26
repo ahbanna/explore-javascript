@@ -35,7 +35,11 @@ if (birthYear <= 2000) {
 }
 console.log(century);
 
+// Example: 4
+if (age === 18) console.log("You are adult"); // You are adult
+
 // Switch
+// Example: 1
 // let points = parseInt(prompt("Enter your number"));
 //Or,
 let points = 20;
@@ -44,7 +48,7 @@ switch (points) {
   case 10:
     console.log("Congratulations.. you are silver star");
     break;
-  case 20:
+  case 20: // points === 20
     console.log("Congratulations.. you are gold star");
     break;
   case 30:
@@ -57,9 +61,39 @@ switch (points) {
     console.log("Not found any status");
 }
 
-//
-let num1 = 5;
-let num2 = "5";
+// Example: 2
+let day = "friday";
+switch (day) {
+  case "saturday":
+    console.log("This is saturday");
+    break;
+  case "sunday":
+    console.log("This is sunday");
+    break;
+  case "thursday":
+    console.log("This is thursday");
+    break;
+  case "friday": // day === friday
+    console.log("This is friday");
+    break;
+  default:
+    console.log("No day matched");
+    break;
+}
+// Example: 3
+let day2 = "sunday";
+switch (day2) {
+  case "saturday":
+    console.log("This is saturday");
+    break;
+  case "sunday": // case matched here but no console.log
+  case "thursday":
+    console.log("This is thursday"); // it will be executed
+  case "friday":
+    console.log("This is friday"); // it will be executed because don't have break in previous one
+    break;
+  default:
+    console.log("No day matched");
+}
 
-console.log(num1 == num2); // true
-console.log(num1 === num2); // false
+//

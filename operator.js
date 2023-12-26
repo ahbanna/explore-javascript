@@ -48,6 +48,34 @@ let rightAverage = (age1 + age2) / 2; // 15
 
 console.log(wrongAverage, rightAverage);
 
-console.log("I ❤  You");
+// Example: 5
+let age = 18;
+if (age === 18) console.log("You are adult");
 
-//
+// Example: 6
+console.log(1 == 1); // true
+console.log("hello" == "hello"); // true
+console.log("1" == 1); // true ('1' is converted to a number as type coercion)
+console.log(0 == false); // true
+
+// Example: 7
+console.log(1 === 1); // true
+console.log("hello" === "hello"); // true
+console.log("1" === 1); // false
+console.log(0 === false); // false
+
+// Example: 8
+const rollNumber = Number(prompt("Enter your number"));
+console.log(typeof rollNumber);
+if (rollNumber === 5) {
+  console.log("This is my roll number");
+} else {
+  console.log("It's not my roll number");
+}
+
+// Example: 9
+let num1 = 5;
+let num2 = "5";
+
+console.log(num1 == num2); // true
+console.log(num1 === num2); // false
