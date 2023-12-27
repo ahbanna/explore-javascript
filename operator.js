@@ -65,7 +65,8 @@ console.log("1" === 1); // false
 console.log(0 === false); // false
 
 // Example: 8
-const rollNumber = Number(prompt("Enter your number"));
+// const rollNumber = Number(prompt("Enter your number"));
+let rollNumber = 5;
 console.log(typeof rollNumber);
 if (rollNumber === 5) {
   console.log("This is my roll number");
