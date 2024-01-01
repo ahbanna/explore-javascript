@@ -84,7 +84,7 @@ const teacher = "Tiger sir";
 teacher[0] = "Tofazzal";
 console.log(teacher); // output: Tiger sir
 
-// Mutable
+// Mutable (non primitive)
 // Example: 1
 let person1 = {
   name: "Ruble",
