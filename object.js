@@ -58,28 +58,19 @@ if (person[interestedIn]) {
 console.log(person.interestedIn); // undefined because use of dot notation
 */
 // show all elements of friends array usning for loop
-for (let i = 0; i < person.friends.length; i++) {
+/*for (let i = 0; i < person.friends.length; i++) {
   const element = person.friends[i];
   console.log(element); // show all friends
 }
-
-console.log(person.education.ssc); // SSC from Govt. Mustafabila Alia Madrasha, Bogra
+*/
+/*console.log(person.education.ssc); // SSC from Govt. Mustafabila Alia Madrasha, Bogra
 console.log(person.education.subjects[1].subName);
+*/
 
 // Object destructuring / spreading
-const { firstName, lastName: sesName, age } = person;
+/*const { firstName, lastName: sesName, age } = person;
 console.log(firstName, sesName);
 
 // const { firstName, lastName, ...others } = person;
 // console.log(others);
-
-// Example: (Object destructuring)
-const tutul = {
-  "father's name": "Abu Bakkar Siddique",
-  "mother's name": "Anwara Begum",
-  address: "Bogra",
-};
-const shohag = { ...tutul };
-shohag.children = "Rufaida";
-console.log(tutul);
-console.log(shohag);
+*/
