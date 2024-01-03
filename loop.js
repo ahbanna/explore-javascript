@@ -1,3 +1,5 @@
+// ================================== For loop ==========================================
+
 // Example: 1 (1-100 and 100-1)
 /*for (let number = 1; number <= 100; number++) {
   console.log(number); // 1 to 100
@@ -296,3 +298,62 @@ for (let i = 0; i < matrix.length; i++) {
   }
 }
 */
+
+// ======================================== While loop ===========================================
+
+// Example: 1
+/*let num = 1;
+while (num <= 100) {
+  console.log(num);    // show number 1-100
+  num++;
+}
+*/
+
+// Example: 2
+/*let sum = 0;
+let num = 1;
+while (num <= 5) {
+  sum = sum + num;
+  num++;
+}
+console.log(sum);   // 15
+*/
+
+// Example: 3 (sum of all the numbers that are divisible by 3 and 5 form 1-100)
+/*let i = 1;
+let sum = 0;
+while (i <= 100) {
+  if (i % 3 == 0 && i % 5 == 0) {
+    sum = sum + i;
+  }
+  i++;
+}
+console.log(sum);
+*/
+// let secretNumber = 7;
+// let guess = 0;
+
+// while (guess !== secretNumber) {
+//   guess = parseInt(prompt("Guess a number: "));
+//   if (guess < secretNumber) {
+//     console.log("Too low!");
+//   } else if (guess > secretNumber) {
+//     console.log("Too high!");
+//   }
+// }
+
+// console.log("You guessed it!");
+
+// let userInput = "";
+// while (userInput !== "exit") {
+//   userInput = prompt('Enter a value (type "exit" to quit):');
+//   // Do something with userInput
+// }
+// Example: 4
+while (dice !== 6) {
+  console.log(`Rolled a ${dice}`);
+  dice = Math.floor(Math.random() * 6) + 1;
+  if (dice === 6) {
+    console.log("Congratulations! It's 6");
+  }
+}
