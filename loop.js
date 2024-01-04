@@ -330,30 +330,44 @@ while (i <= 100) {
 }
 console.log(sum);
 */
-// let secretNumber = 7;
-// let guess = 0;
-
-// while (guess !== secretNumber) {
-//   guess = parseInt(prompt("Guess a number: "));
-//   if (guess < secretNumber) {
-//     console.log("Too low!");
-//   } else if (guess > secretNumber) {
-//     console.log("Too high!");
-//   }
-// }
-
-// console.log("You guessed it!");
-
-// let userInput = "";
-// while (userInput !== "exit") {
-//   userInput = prompt('Enter a value (type "exit" to quit):');
-//   // Do something with userInput
-// }
-// Example: 4
-while (dice !== 6) {
+// Example: 4 (running a loop until we roll a 6)
+/*while (dice !== 6) {
   console.log(`Rolled a ${dice}`);
   dice = Math.floor(Math.random() * 6) + 1;
   if (dice === 6) {
     console.log("Congratulations! It's 6");
   }
 }
+*/
+// Example: 5
+/*let secretNumber = 7;
+let guess;
+
+while (guess !== secretNumber) {
+  guess = parseInt(prompt("Guess a number: "));
+  if (guess < secretNumber) {
+    console.log("Too low!");
+  } else if (guess > secretNumber) {
+    console.log("Too high!");
+  }
+}
+
+console.log("You guessed it!");
+*/
+
+// ======================================== Do While loop ===========================================
+// Example: 1;
+/*let number = 1;
+do {
+  console.log(number);
+  number++;
+} while (number <= 100);    // 1-100
+*/
+// Example: 2
+/*
+let number = 1;
+do {
+  console.log(number);
+  number++;
+} while (number >= 100);    // 1
+*/
