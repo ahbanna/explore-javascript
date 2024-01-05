@@ -63,7 +63,7 @@ for (let num = 2; num <= 100; num++) {
   if (num % 3 == 0) {
     console.log(num);
   }
-}
+} 
 */
 
 // From 70-100
